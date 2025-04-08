@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>9400fc118370a210b0abcfc0deaad329</answer>
+        <condition/>
+        <decision_table display_value="ServiceSLAMapping">311e245d8330a210b0abcfc0deaad336</decision_table>
+        <default_answer>true</default_answer>
+        <input_table>var__m_sys_decision_input_311e245d8330a210b0abcfc0deaad336</input_table>
+        <label>ServiceSLAMapping default result</label>
+        <marked_for_deletion>false</marked_for_deletion>
+        <order>100</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-04-08 04:19:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>190038118370a210b0abcfc0deaad3f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ServiceSLAMapping default result</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Based SLA Management" source="5a51acd583fc6210b0abcfc0deaad3ba">5a51acd583fc6210b0abcfc0deaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Based SLA Management">5a51acd583fc6210b0abcfc0deaad3ba</sys_scope>
+        <sys_update_name>sys_decision_question_190038118370a210b0abcfc0deaad3f5</sys_update_name>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-04-08 04:19:18</sys_updated_on>
+    </sys_decision_question>
+</record_update>
