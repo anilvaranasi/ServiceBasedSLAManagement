@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>testDecisionTable</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[try{
+	var inputs={};
+  	inputs['u_slaid'] = 'a2a8e0158330a210b0abcfc0deaad37e'; // String 
+
+	var dt = new sn_dt.DecisionTableAPI();
+  	var response = dt.getDecision('311e245d8330a210b0abcfc0deaad336', inputs);
+  
+	var result_elements = response.result_elements;
+ 	var u_matchingserviceids = result_elements.u_matchingserviceids.getValue();
+
+gs.log('printing from fix script ' + u_matchingserviceids);
+}
+catch(e){
+	gs.log("Couldn't run this script Error: "+e)
+}
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-04-08 03:18:38</sys_created_on>
+        <sys_id>d7e1ec1983fc6210b0abcfc0deaad388</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>testDecisionTable</sys_name>
+        <sys_package display_value="Service Based SLA Management" source="5a51acd583fc6210b0abcfc0deaad3ba">5a51acd583fc6210b0abcfc0deaad3ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Based SLA Management">5a51acd583fc6210b0abcfc0deaad3ba</sys_scope>
+        <sys_update_name>sys_script_fix_d7e1ec1983fc6210b0abcfc0deaad388</sys_update_name>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-04-08 04:35:31</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d7e1ec1983fc6210b0abcfc0deaad388</id>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-04-08 03:18:38</sys_created_on>
+        <sys_id>b82268d583fc6210b0abcfc0deaad33f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-04-08 03:18:38</sys_updated_on>
+        <table>sys_script_fix</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
